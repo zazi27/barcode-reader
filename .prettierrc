@@ -1,0 +1,16 @@
+{
+  "printWidth": 120,
+  "trailingComma": "es5",
+  "semi": true,
+  "tabWidth": 4,
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": ["*.json", "*.yml", "*rc"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

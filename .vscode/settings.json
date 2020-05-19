@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": false,
+  "editor.tabSize": 4,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "prettier.printWidth": 120,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+  },
+  "[markdown]": {
+      "editor.wordWrap": "on",
+      "editor.quickSuggestions": false,
+      "files.trimTrailingWhitespace": false,
+  },
+  "explorer.compactFolders": false
+}

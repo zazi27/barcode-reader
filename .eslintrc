@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": ["@typescript-eslint", "react-hooks", "simple-import-sort", "import"],
+  "parser": "@typescript-eslint/parser",
+  "env": { "browser": true, "node": true, "es6": true },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".jsx", ".tsx"] }],
+    "react/jsx-indent": ["warn", 4],
+    "no-irregular-whitespace": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/camelcase": "off",
+    "simple-import-sort/sort": "off",
+    "import/order": "off",
+    "no-restricted-imports": ["error", { "patterns": ["./../"] }]
+  },
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": ["off"]
+      }
+    },
+    {
+      "files": ["*.tsx", "*.ts", "*.jsx"],
+      "excludedFiles": ["*.test.tsx", "*.test.ts"],
+      "rules": {}
+    }
+  ]
+}
